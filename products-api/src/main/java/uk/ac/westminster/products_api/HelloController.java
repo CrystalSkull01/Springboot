@@ -28,6 +28,11 @@ public class HelloController {
         return "API running -" + LocalDate.now().toString();
     }
 
+    @GetMapping("/goodbye")
+    public String goodbye() {
+        return "Goodbye from Spring Boot!";
+    }
+
     // TODO (Activity 3): add your /goodbye endpoint here.
 
 }
